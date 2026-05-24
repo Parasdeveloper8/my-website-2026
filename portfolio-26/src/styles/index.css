@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#050505] text-white overflow-x-hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-2xl;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 py-20;
+  }
+}
