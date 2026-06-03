@@ -8,7 +8,7 @@ export const ProjectGrid = () => {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Selected Engineering</h2>
-          <p className="text-zinc-400 text-sm max-w-md">A meticulous breakdown of production models and experimental core apps built with absolute focus.</p>
+          <p className="text-zinc-400 text-sm max-w-md">A meticulous breakdown of projects built with absolute focus.</p>
         </div>
         <a 
           href={SOCIAL_LINKS.github} 

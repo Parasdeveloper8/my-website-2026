@@ -12,9 +12,9 @@ export const Contact = () => {
           viewport={{ once: true }}
           className="relative rounded-3xl p-8 sm:p-12 overflow-hidden border border-brand-primary/20 bg-gradient-to-r from-brand-primary/5 to-purple-500/5 shadow-[0_0_50px_-12px_rgba(59,130,246,0.15)] mb-12"
         >
-          <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-white">Currently Open for Engineering Roles</h2>
+          <h2 className="text-2xl sm:text-4xl font-bold mb-4 text-white">Currently Open for Collaboration</h2>
           <p className="text-zinc-400 text-sm max-w-xl mx-auto leading-relaxed">
-            Available for freelance technical pipelines, ecosystem collaborations, and innovative product development modules.
+            Available for open-source contributions , freelance projects , part-time roles , and product development with collaboration.
           </p>
         </motion.div>
 
@@ -55,7 +55,7 @@ export const Contact = () => {
               <svg className="w-5 h-5 fill-current text-zinc-400 group-hover:text-white transition-colors" viewBox="0 0 24 24">
                 <path d={BRAND_ICONS.github} />
               </svg>
-              paras-prajapat
+              Parasdeveloper8
             </a>
           </div>
           

@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export const About = () => {
   const stats = [
-    { value: "4+ Yrs", label: "Years of Coding" },
-    { value: "20+", label: "Projects Built" },
-    { value: "5+", label: "Client Deliveries" }
+    { value: "2+ Yrs", label: "Years of Coding" },
+    { value: "25+", label: "Projects Built" },
+    { value: "2+", label: "Client Deliveries" }
   ];
 
   return (
@@ -38,12 +38,15 @@ export const About = () => {
             The Vision Behind The Code
           </h2>
           <p className="text-zinc-400 leading-relaxed mb-6">
-            I discovered my passion for computer logic in class 8th. What began as experimentation quickly accelerated into building complete infrastructure platforms and client-ready web systems.
+            I discovered my passion for computer logic in class 8th. What began as experimentation quickly accelerated into building real-world applications , ranging from simple calculation tools to complex web service for clients.
           </p>
           <p className="text-zinc-400 leading-relaxed mb-10">
             Currently deep in my 11th-grade academic commitments, I simultaneously operates as a freelance software engineer. My endgame points directly at building impactful technology products and founding resilient modern platforms.
           </p>
-
+          <p className="text-zinc-400 leading-relaxed mb-10">
+            Beyond the code , I am also interested in art and craft and built many art projects.
+            The main skill that I found in myself is adaptability . I can switch to any other field whether it is related to coding, or not.
+          </p>
           <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/5">
             {stats.map((stat, i) => (
               <div key={i}>

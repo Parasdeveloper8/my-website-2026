@@ -77,26 +77,26 @@ export const PROJECTS: Project[] = [
 export const EDUCATION: EducationItem[] = [
   {
     id: 1,
-    institute: "Higher Secondary Institution",
+    institute: "Achievers Public Senior Secondary School",
     duration: "2024 - Present",
-    level: "Class 11 (Science & Technology)",
+    level: "Class 11 (PCM)",
     location: "Alwar, Rajasthan, India",
-    description: "Actively balancing rigorous engineering coursework with live freelance architectures and advanced software design principles."
+    description: "Currently pursuing higher secondary education with a focus on Physics, Chemistry, and Mathematics."
   },
   {
     id: 2,
-    institute: "Secondary Education Campus",
-    duration: "2022 - 2024",
-    level: "Class 9 - Class 10",
+    institute: "Manav Bharti School",
+    duration: "2014  - 2024",
+    level: "LKG - class 8",
     location: "Alwar, Rajasthan, India",
-    description: "Transitioned from algorithmic logic building to professional application architecture. Delivered original projects to local clients."
+    description: "Completed primary education"
   }
 ];
 
 export const SERVICES: Service[] = [
   {
     title: "Web Applications",
-    description: "Complex corporate dashboards, rich user interfaces, custom states, and deep interactive logical layers engineered natively in React.",
+    description: "Custom-built, high-performance web applications tailored to your business needs.",
     iconName: "web-app",
     pricing: "Contact Me for Pricing"
   },
@@ -110,7 +110,7 @@ export const SERVICES: Service[] = [
 
 export const SOCIAL_LINKS = {
   github: "https://github.com/Parasdeveloper8",
-  linkedin: "https://linkedin.com/in/your-username", // Replace with your actual username
+  linkedin: "https://www.linkedin.com/in/paras-prajapat-7475632a1/", 
 };
 
 // Pure, optimized SVG paths for brand icons

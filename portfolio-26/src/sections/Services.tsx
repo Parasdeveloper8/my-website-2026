@@ -7,7 +7,6 @@ export const Services = () => {
     <section className="section-container border-t border-white/5" id="services">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Core Competencies</h2>
-        <p className="text-zinc-400 max-w-md mx-auto text-sm">Specialized modular workflows designed for modern enterprise performance.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

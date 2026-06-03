@@ -37,7 +37,7 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           className="text-lg sm:text-2xl text-zinc-400 max-w-3xl mx-auto font-medium leading-relaxed mb-12"
         >
-          16-year-old Software Engineer, Freelancer & Future Entrepreneur. Creating clean code structures and high-performance applications.
+          16-year-old Software Engineer, Freelancer & Future Entrepreneur.
         </motion.h2>
 
         <motion.div 
