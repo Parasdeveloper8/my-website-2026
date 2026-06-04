@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import myImage from "../assets/images/myImage.jpeg";
 
 export const About = () => {
   const stats = [
@@ -10,21 +11,30 @@ export const About = () => {
   return (
     <section className="section-container border-t border-white/5" id="about">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        {/* Visual Element Container */}
-        <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="lg:col-span-5 relative group"
-        >
-          <div className="w-full aspect-square rounded-3xl bg-gradient-to-br from-brand-primary/20 to-purple-500/20 border border-white/10 flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-zinc-900/60 mix-blend-multiply" />
-            <span className="font-mono text-7xl select-none text-zinc-800 tracking-widest font-black">PP</span>
-            {/* Minimalist framing detail to replace generic graphics */}
-            <div className="absolute bottom-6 left-6 font-mono text-xs text-zinc-500">Alwar, RJ, IN</div>
-          </div>
-        </motion.div>
+
+        <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}  transition={{ duration: 0.6 }}
+                     className="lg:col-span-5 relative group">
+  <div className="w-full aspect-square rounded-3xl bg-gradient-to-br from-brand-primary/20 to-purple-500/20 border border-white/10 flex items-center justify-center relative overflow-hidden">
+    <div className="absolute inset-0 bg-zinc-950/40 z-10 mix-blend-multiply pointer-events-none transition-opacity group-hover:opacity-20 duration-500" />
+      <img src={myImage} alt="Paras Prajapat" loading="lazy"
+      className="absolute inset-0 w-full h-full object-cover filter contrast-[1.05] brightness-[0.85] transition-transform duration-700 ease-out group-hover:scale-105"
+      onError={(e) => {
+        // If image fails to load or path is wrong, fallback smoothly to text initials
+        e.currentTarget.style.display = 'none';
+        {/* Elegant Text Fallback Behind Image (Displays if image path is broken) */}
+        <span className="font-mono text-7xl select-none text-zinc-800 tracking-widest font-black absolute">
+         PP
+        </span>
+      }}
+    />
+    
+    {/* Minimalist framing detail overlay */}
+    <div className="absolute bottom-6 left-6 font-mono text-xs text-zinc-400 z-20 mix-blend-difference drop-shadow-sm">
+      Alwar, RJ, IN
+    </div>
+  </div>
+</motion.div>
 
         {/* Narrative & Stats Content */}
         <motion.div 

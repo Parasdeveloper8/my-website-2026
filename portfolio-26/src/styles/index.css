@@ -1,5 +1,27 @@
 @import "tailwindcss";
-@tailwind utilities;
+
+@layer utilities {
+  /* Forces sub-pixel smoothing during matrix transitions */
+  .will-change-transform {
+    will-change: transform;
+  }
+  
+  /* Pushes rendering to the 3D graphics hardware pipeline */
+  .transform-gpu {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* Fixes jagged edge breaks during scaling */
+  .backface-hidden {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  /* Forces highest-quality image scaling interpolation */
+  .image-render-smooth {
+    image-rendering: auto;
+  }
+}
 
 @layer base {
 

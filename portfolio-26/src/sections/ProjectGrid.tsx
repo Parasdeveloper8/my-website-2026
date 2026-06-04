@@ -38,18 +38,14 @@ export const ProjectGrid = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-950 flex items-center justify-center p-4">
                   <span className="font-mono text-xs text-zinc-600 select-none tracking-tight font-medium">[{proj.title}] Image Asset Layer</span>
                 </div>
-                <img 
-                  loading="lazy" 
-                  src={proj.image} 
-                  alt={proj.title}
-                  className="w-full h-full object-cover relative z-10 opacity-0 group-hover:scale-105 transition-transform duration-500" 
-                  onError={(e) => (e.currentTarget.style.display = 'none')}
-                  onLoad={(e) => (e.currentTarget.style.opacity = '1')}
-                />
+                <img loading="lazy"  src={proj.image}  alt={proj.title}
+         className="w-full h-full object-cover relative z-10 opacity-0 scale-105 group-hover:scale-100 transition-transform duration-700 ease-out will-change-transform transform-gpu backface-hidden antialiased image-render-smooth" 
+          onError={(e) => (e.currentTarget.style.display = 'none')}
+          onLoad={(e) => (e.currentTarget.style.opacity = '1')} />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-white group-hover:text-brand-primary transition-colors">{proj.title}</h3>
-                <p className="text-zinc-400 text-xs leading-relaxed mb-6 line-clamp-3">{proj.description}</p>
+                <p className="text-zinc-400 text-sm leading-relaxed mb-6 line-clamp-5">{proj.description}</p>
               </div>
             </div>
 
@@ -62,15 +58,25 @@ export const ProjectGrid = () => {
                 ))}
               </div>
               <div className="flex items-center gap-4 pt-4 border-t border-white/5">
+              {proj.github === "#" ? 
+              (  <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-400  hover:text-white transition-colors">
+                    <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d={BRAND_ICONS.github} />
+                  </svg> Private Repository</span>) :
+                   (
                 <a href={proj.github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-400 hover:text-white transition-colors">
                   <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                     <path d={BRAND_ICONS.github} />
                   </svg> 
                   Code
                 </a>
-                <a href={proj.live} className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-400 hover:text-white transition-colors">
+                  )}
+
+                  {proj.live !== "#" && (
+                <a href={proj.live} target="_blank" className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-400 hover:text-white transition-colors">
                   <ExternalLink size={14} /> Live Demo
                 </a>
+                  )}
               </div>
             </div>
           </motion.div>

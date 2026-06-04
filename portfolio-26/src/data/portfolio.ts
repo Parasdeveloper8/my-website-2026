@@ -1,4 +1,8 @@
-import { Code2, Globe } from "lucide-react";
+import projectImg1 from "../assets/images/project1.png";
+import projectImg2 from "../assets/images/project2.png";
+import projectImg3 from "../assets/images/project3.png";
+import projectImg4 from "../assets/images/project4.png";
+import projectImg5 from "../assets/images/project5.png";
 
 export interface Project {
   id: number;
@@ -29,47 +33,47 @@ export interface Service {
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "QuantumSaaS Dashboard",
-    description: "A premium analytics dashboard built for tracking fast-moving data. Features glassmorphism components and lightning-fast state updates.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    image: "/images/project1.jpg",
-    github: "https://github.com/paras-prajapat",
-    live: "#"
+    title: "Rao Coaching Center",
+    description: "Institute website built using web development technologies, showcasing courses, faculty, and contact information for prospective students.",
+    tags: ["HTML","Javascript","tailwindcss","leaflet.js"],
+    image: projectImg1,
+    github: "#",
+    live: "https://raocoachingcenter.com"
   },
   {
     id: 2,
-    title: "Apex Engine API",
-    description: "A scalable, high-performance backend architecture optimized for lightning-fast database transactions and user management systems.",
-    tags: ["Node.js", "TypeScript", "PostgreSQL", "Docker"],
-    image: "/images/project2.jpg",
-    github: "https://github.com/paras-prajapat",
+    title: "Revisor",
+    description: "A quiz application for your revision with a facility to create flashcards and generate quiz from them.",
+    tags: ["Go","Typescript","React","MySQL","Perplexity API","CSS"],
+    image: projectImg2,
+    github: "https://github.com/Parasdeveloper8/Revisor",
     live: "#"
   },
   {
     id: 3,
-    title: "Stellar Landing Page",
-    description: "A dark-themed, ultra-premium landing page designed specifically for high-conversion tech startups and SaaS platforms.",
-    tags: ["React", "Tailwind CSS", "PostCSS"],
-    image: "/images/project3.jpg",
-    github: "https://github.com/paras-prajapat",
+    title: "Admin Panel",
+    description: "A simple admin panel built with modern web technologies. This project demonstrates CRUD operations , registration , Login features .",
+    tags: ["Node.js", "Express.js", "HTML", "CSS", "JavaScript", "MySQL"],
+    image: projectImg3,
+    github: "https://github.com/Parasdeveloper8/admin-panel",
     live: "#"
   },
   {
     id: 4,
-    title: "Nexus Realtime Chat",
-    description: "A secure, instant communication app optimizing data packets and using WebSockets for instantaneous messaging.",
-    tags: ["React", "TypeScript", "WebSockets", "Tailwind"],
-    image: "/images/project4.jpg",
-    github: "https://github.com/paras-prajapat",
+    title: "Aepay",
+    description: "This is a fun project which demonstrates a simple payment system in which you can pay with aadhaar number and fingerprint.",
+    tags: ["HTML","CSS","Javascript","TypeScript"],
+    image: projectImg4,
+    github: "https://github.com/Parasdeveloper8/aepay",
     live: "#"
   },
   {
     id: 5,
-    title: "Vortex E-Commerce Site",
-    description: "A completely responsive storefront focusing on minimal layouts, fast image load balancing, and elegant transitions.",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
-    image: "/images/project5.jpg",
-    github: "https://github.com/paras-prajapat",
+    title: "Laboratory",
+    description: "This is one of my biggest project and also a fun one . I have integrated everything from social media to mathematics tools in a single place. ",
+    tags: ["HTML","CSS","Javascript","TypeScript","Go","Docker","MySQL"],
+    image: projectImg5,
+    github: "https://github.com/Parasdeveloper8/Laboratory",
     live: "#"
   }
 ];
