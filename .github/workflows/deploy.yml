@@ -30,21 +30,21 @@ jobs:
           node-version: 20
           cache: 'npm'
           # Tells Node where to look for package-lock.json for caching
-          cache-dependency-path: './portfolio-26/package-lock.json'
+          cache-dependency-path: '../portfolio-26/package-lock.json'
 
       - name: Install dependencies
-        working-directory: ./portfolio-26
+        working-directory: ../portfolio-26
         run: npm ci
 
       - name: Build site
-        working-directory: ./portfolio-26
+        working-directory: ../portfolio-26
         run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Tells GitHub to look inside the subfolder's dist directory
-          path: './portfolio-26/dist'
+          path: '../portfolio-26/dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
